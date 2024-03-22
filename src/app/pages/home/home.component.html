@@ -1,0 +1,7 @@
+<div class="container mx-auto max-w-screen-xl p-6">
+    <div class="flex flex-wrap justify-center gap-6">
+        @for (product of products; track product.id) {
+        <app-card [product]="product"></app-card>
+        }
+    </div>
+</div>
