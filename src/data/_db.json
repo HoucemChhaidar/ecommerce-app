@@ -1,0 +1,55 @@
+{
+    "users":[
+        {
+            "id": "1",
+            "fFname":"Mohamed",
+            "lname":"Jmal",
+            "email":"mohamedjmal@gmail.com",
+            "imgURL":"",
+            "password":"mohamed123"
+        },
+        {
+            "id": "2",
+            "fFname":"Houcem",
+            "lname":"Chehaidar",
+            "email":"houcemchehaidar@gmail.com",
+            "imgURL":"",
+            "password":"houcem456"
+        },
+        {
+            "id": "3",
+            "fFname":"Firas",
+            "lname":"Chabchoub",
+            "email":"firaschabchoub@gmail.com",
+            "imgURL":"",
+            "password":"firas789"
+        }
+    ],
+    "products":[
+        {
+            "id":"1",
+            "name":"camera",
+            "description":"Canon C5A2",
+            "price":350,
+            "img":"",
+            "category": "multimedia"
+        },
+        {
+            "id":"2",
+            "name":"pc",
+            "description":"pc asus",
+            "price":1000,
+            "img":"",
+            "category": "computers"
+        },
+        {
+            "id":"3",
+            "name":"Processor",
+            "description":"I7 Processor 12th generation",
+            "price":750,
+            "img":"",
+            "category": "hardware"
+        }
+    ]
+    
+}
