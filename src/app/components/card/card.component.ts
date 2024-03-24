@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { Product } from '../../Models/Product/product';
+import { CartService } from '../../services/cart/cart.service';
 
 @Component({
   selector: 'app-card',
@@ -12,6 +13,12 @@ import { Product } from '../../Models/Product/product';
 })
 export class CardComponent {
   @Input() product!: Product;
-  constructor() {}
   faShoppingCart = faShoppingCart;
+  constructor(private cartServices: CartService) {}
+
+  addToCart(product: Product) {
+    this.cartServices.addToCart(product);
+  }
+
+
 }
