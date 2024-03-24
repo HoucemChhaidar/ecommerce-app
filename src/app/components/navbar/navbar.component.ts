@@ -9,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  
+
+    toggleDropdown() {
+        var dropdownMenu = document.getElementById("dropdown-menu");
+        dropdownMenu?.classList.toggle("hidden");
+    }
+
+
 }
