@@ -27,6 +27,7 @@ export class AuthService {
     this.authenticated = false;
     this.localStorage!.removeItem('user');
     this.localStorage!.setItem('authenticated', `${this.authenticated}`);
+    this.router.navigate(['/login']);
   }
 
   public async login(email: string, password: string) {
