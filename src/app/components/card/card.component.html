@@ -6,6 +6,7 @@
         <p class="text-base text-gray-700">{{ product.description }}</p>
         <span class="text-3xl font-bold text-gray-900 my-2">{{ "$" + product.price }}</span>
         <button
+            (click)="addToCart(product)"
             class="flex justify-center gap-3 px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded hover:bg-green-800 focus:outline-none">
             <fa-icon [icon]="faShoppingCart"></fa-icon>
             Add to Cart
