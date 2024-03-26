@@ -53,4 +53,9 @@ export class CartComponent implements OnInit {
     this.cartItems.forEach(item => totalPrice += item.price * item.quantity);
     return totalPrice.toFixed(2);
   }
+
+  clearCart() {
+    this.cartService.clearCart();
+    this.ngOnInit();
+  }
 }

@@ -12,7 +12,7 @@ export class CartService {
     this.localStorage = document.defaultView?.localStorage;
   }
 
-  addToCart(product: Product) {
+  addToCart(product: any) {
     try {
       let cart: string | null | undefined = this.localStorage?.getItem('cart');
       if (cart) {
@@ -26,15 +26,14 @@ export class CartService {
         if (existingItemIndex !== -1) {
           parsedCart[existingItemIndex].quantity++; // Update quantity of existing item
         } else {
-          parsedCart.push(product.toJson()); // Add new item if not found
+          parsedCart.push(product); // Add new item if not found
         }
 
         cart = JSON.stringify(parsedCart);
       } else {
-        cart = JSON.stringify([product.toJson()]);
+        cart = JSON.stringify([product]);
       }
       this.localStorage?.setItem('cart', cart);
-      console.log(cart);
     } catch (error) {
       console.error('Error adding to cart:', error);
     }
@@ -83,7 +82,7 @@ export class CartService {
       }
       const index = parsedCart.findIndex(p => p.id === product.id);
       if (index !== -1) {
-        parsedCart[index] = product.toJson();
+        parsedCart[index] = product;
         this.localStorage?.setItem('cart', JSON.stringify(parsedCart));
       }
     }

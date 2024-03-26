@@ -13,13 +13,13 @@ import { Product } from '../../Models/Product/product';
   styleUrls: ['./home.component.css'] // Add this line for styling
 })
 export class HomeComponent {
-  products: Product[] = [];
+  products: any[] = [];
   constructor(authServices: AuthService, router: Router, public productServices: ProductService) {
     if (authServices.authenticated == false) {
       router.navigate(['/login']);
     }
     this.productServices.fetchAllProducts().then(products => {
-      this.products = products;
+      this.products = products as any[];
     });
   }
 }

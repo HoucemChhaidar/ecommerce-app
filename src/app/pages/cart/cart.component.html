@@ -42,8 +42,14 @@
         <p class="py-2 text-lg font-bold text-gray-900">
             Total Price: $<span>{{calculateTotalPrice()}}</span>
         </p>
-        <button class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-700 focus:outline-none">
-            Pay Now
-        </button>
+        <div class="flex gap-2">
+            <button class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-700 focus:outline-none"
+                (click)="clearCart()">
+                Clear Cart
+            </button>
+            <button class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-700 focus:outline-none">
+                Pay Now
+            </button>
+        </div>
     </div>
 </div>
