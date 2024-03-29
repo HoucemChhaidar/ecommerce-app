@@ -1,269 +1,269 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "John Doe",
-            "image": "user_1.jpg",
-            "email": "john.doe@example.com",
-            "password": "password123"
-        },
-        {
-            "id": 2,
-            "name": "Jane Smith",
-            "image": "user_2.jpg",
-            "email": "jane.smith@example.com",
-            "password": "secretpassword"
-        },
-        {
-            "id": 3,
-            "name": "Alice Miller",
-            "image": "user_3.jpg",
-            "email": "alice.miller@example.com",
-            "password": "apassword1"
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "name": "Men's Cotton T-Shirt",
-            "description": "A comfortable and stylish T-shirt made from 100% cotton. Available in various colors.",
-            "price": 19.99,
-            "image": "product_1.jpg",
-            "categoryIds": [
-                1
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 2,
-            "name": "Women's Casual Dress",
-            "description": "A flowy and comfortable dress perfect for everyday wear. Available in multiple sizes and colors.",
-            "price": 49.99,
-            "image": "product_2.jpg",
-            "categoryIds": [
-                1
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 3,
-            "name": "Gaming Laptop",
-            "description": "A powerful laptop with high-performance graphics card ideal for gamers. Includes a backlit keyboard.",
-            "price": 1299.99,
-            "image": "product_3.jpg",
-            "categoryIds": [
-                2
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 4,
-            "name": "Wireless Headphones",
-            "description": "Noise-cancelling wireless headphones with long battery life. Perfect for travel and everyday use.",
-            "price": 149.99,
-            "image": "product_4.jpg",
-            "categoryIds": [
-                3
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 5,
-            "name": "Smartphone",
-            "description": "A sleek and powerful smartphone with a high-resolution display and advanced camera features.",
-            "price": 799.99,
-            "image": "product_5.jpg",
-            "categoryIds": [
-                2
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 6,
-            "name": "Running Shoes",
-            "description": "High-performance running shoes with cushioned soles for maximum comfort and support.",
-            "price": 99.99,
-            "image": "product_6.jpg",
-            "categoryIds": [
-                3
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 7,
-            "name": "Digital Camera",
-            "description": "A professional-grade digital camera with interchangeable lenses and 4K video recording capability.",
-            "price": 1499.99,
-            "image": "product_7.jpg",
-            "categoryIds": [
-                2
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 8,
-            "name": "Leather Handbag",
-            "description": "A stylish and durable handbag made from genuine leather. Perfect for everyday use or special occasions.",
-            "price": 199.99,
-            "image": "product_8.jpg",
-            "categoryIds": [
-                3
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 9,
-            "name": "Fitness Tracker",
-            "description": "An advanced fitness tracker with heart rate monitoring, GPS tracking, and water resistance.",
-            "price": 129.99,
-            "image": "product_9.jpg",
-            "categoryIds": [
-                2
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 10,
-            "name": "Earrings",
-            "description": "Exquisite earrings crafted from sterling silver and adorned with sparkling gemstones.",
-            "price": 79.99,
-            "image": "product_10.jpg",
-            "categoryIds": [
-                3
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 11,
-            "name": "Coffee Maker",
-            "description": "A high-quality coffee maker with programmable features and a sleek stainless steel design.",
-            "price": 69.99,
-            "image": "product_11.jpg",
-            "categoryIds": [
-                5
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 12,
-            "name": "Sunglasses",
-            "description": "Fashionable sunglasses with polarized lenses for UV protection and glare reduction.",
-            "price": 129.99,
-            "image": "product_12.jpg",
-            "categoryIds": [
-                3
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 13,
-            "name": "Yoga Mat",
-            "description": "A premium yoga mat made from eco-friendly materials with excellent grip and cushioning.",
-            "price": 49.99,
-            "image": "product_13.jpg",
-            "categoryIds": [
-                5
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 14,
-            "name": "Portable Speaker",
-            "description": "Compact and wireless portable speaker with powerful sound performance and long battery life.",
-            "price": 79.99,
-            "image": "product_14.jpg",
-            "categoryIds": [
-                2
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 15,
-            "name": "Leather Wallet",
-            "description": "A classic leather wallet with multiple card slots and a secure coin pocket.",
-            "price": 49.99,
-            "image": "product_15.jpg",
-            "categoryIds": [
-                3
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 16,
-            "name": "Desktop Computer",
-            "description": "A high-performance desktop computer with a fast processor and ample storage space.",
-            "price": 1499.99,
-            "image": "product_16.jpg",
-            "categoryIds": [
-                2
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 17,
-            "name": "Perfume",
-            "description": "A luxurious perfume with a captivating fragrance that lasts all day.",
-            "price": 89.99,
-            "image": "product_17.jpg",
-            "categoryIds": [
-                4
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 18,
-            "name": "Backpack",
-            "description": "A durable and spacious backpack with padded shoulder straps for comfort.",
-            "price": 59.99,
-            "image": "product_18.jpg",
-            "categoryIds": [
-                3
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 19,
-            "name": "Hair Dryer",
-            "description": "A professional-grade hair dryer with multiple heat and speed settings for salon-quality results.",
-            "price": 79.99,
-            "image": "product_19.jpg",
-            "categoryIds": [
-                2
-            ],
-            "quantity": 1
-        },
-        {
-            "id": 20,
-            "name": "Luxury Watch",
-            "description": "A timeless and elegant watch for everyday wear or special occasions.",
-            "price": 399.99,
-            "image": "product_20.jpg",
-            "categoryIds": [
-                3
-            ],
-            "quantity": 1
-        }
-    ],
-    "categories": [
-        {
-            "id": 1,
-            "name": "Clothing"
-        },
-        {
-            "id": 2,
-            "name": "Electronics"
-        },
-        {
-            "id": 3,
-            "name": "Accessories"
-        },
-        {
-            "id": 4,
-            "name": "Beauty"
-        },
-        {
-            "id": 5,
-            "name": "Home & Living"
-        }
-    ]
+	"users": [
+		{
+			"id": 1,
+			"name": "John Doe",
+			"image": "user_1.jpg",
+			"email": "john.doe@example.com",
+			"password": "password123"
+		},
+		{
+			"id": 2,
+			"name": "Jane Smith",
+			"image": "user_2.jpg",
+			"email": "jane.smith@example.com",
+			"password": "secretpassword"
+		},
+		{
+			"id": 3,
+			"name": "Alice Miller",
+			"image": "user_3.jpg",
+			"email": "alice.miller@example.com",
+			"password": "apassword1"
+		}
+	],
+	"products": [
+		{
+			"id": 1,
+			"name": "Men's Cotton T-Shirt",
+			"description": "A comfortable and stylish T-shirt made from 100% cotton. Available in various colors.",
+			"price": 19.99,
+			"image": "product_1.jpg",
+			"categoryIds": [
+				1
+			],
+			"quantity": 1
+		},
+		{
+			"id": 2,
+			"name": "Women's Casual Dress",
+			"description": "A flowy and comfortable dress perfect for everyday wear. Available in multiple sizes and colors.",
+			"price": 49.99,
+			"image": "product_2.jpg",
+			"categoryIds": [
+				1
+			],
+			"quantity": 1
+		},
+		{
+			"id": 3,
+			"name": "Gaming Laptop",
+			"description": "A powerful laptop with high-performance graphics card ideal for gamers. Includes a backlit keyboard.",
+			"price": 1299.99,
+			"image": "product_3.jpg",
+			"categoryIds": [
+				2
+			],
+			"quantity": 1
+		},
+		{
+			"id": 4,
+			"name": "Wireless Headphones",
+			"description": "Noise-cancelling wireless headphones with long battery life. Perfect for travel and everyday use.",
+			"price": 149.99,
+			"image": "product_4.jpg",
+			"categoryIds": [
+				3
+			],
+			"quantity": 1
+		},
+		{
+			"id": 5,
+			"name": "Smartphone",
+			"description": "A sleek and powerful smartphone with a high-resolution display and advanced camera features.",
+			"price": 799.99,
+			"image": "product_5.jpg",
+			"categoryIds": [
+				2
+			],
+			"quantity": 1
+		},
+		{
+			"id": 6,
+			"name": "Running Shoes",
+			"description": "High-performance running shoes with cushioned soles for maximum comfort and support.",
+			"price": 99.99,
+			"image": "product_6.jpg",
+			"categoryIds": [
+				3
+			],
+			"quantity": 1
+		},
+		{
+			"id": 7,
+			"name": "Digital Camera",
+			"description": "A professional-grade digital camera with interchangeable lenses and 4K video recording capability.",
+			"price": 1499.99,
+			"image": "product_7.jpg",
+			"categoryIds": [
+				2
+			],
+			"quantity": 1
+		},
+		{
+			"id": 8,
+			"name": "Leather Handbag",
+			"description": "A stylish and durable handbag made from genuine leather. Perfect for everyday use or special occasions.",
+			"price": 199.99,
+			"image": "product_8.jpg",
+			"categoryIds": [
+				3
+			],
+			"quantity": 1
+		},
+		{
+			"id": 9,
+			"name": "Fitness Tracker",
+			"description": "An advanced fitness tracker with heart rate monitoring, GPS tracking, and water resistance.",
+			"price": 129.99,
+			"image": "product_9.jpg",
+			"categoryIds": [
+				2
+			],
+			"quantity": 1
+		},
+		{
+			"id": 10,
+			"name": "Earrings",
+			"description": "Exquisite earrings crafted from sterling silver and adorned with sparkling gemstones.",
+			"price": 79.99,
+			"image": "product_10.jpg",
+			"categoryIds": [
+				3
+			],
+			"quantity": 1
+		},
+		{
+			"id": 11,
+			"name": "Coffee Maker",
+			"description": "A high-quality coffee maker with programmable features and a sleek stainless steel design.",
+			"price": 69.99,
+			"image": "product_11.jpg",
+			"categoryIds": [
+				5
+			],
+			"quantity": 1
+		},
+		{
+			"id": 12,
+			"name": "Sunglasses",
+			"description": "Fashionable sunglasses with polarized lenses for UV protection and glare reduction.",
+			"price": 129.99,
+			"image": "product_12.jpg",
+			"categoryIds": [
+				3
+			],
+			"quantity": 1
+		},
+		{
+			"id": 13,
+			"name": "Yoga Mat",
+			"description": "A premium yoga mat made from eco-friendly materials with excellent grip and cushioning.",
+			"price": 49.99,
+			"image": "product_13.jpg",
+			"categoryIds": [
+				5
+			],
+			"quantity": 1
+		},
+		{
+			"id": 14,
+			"name": "Portable Speaker",
+			"description": "Compact and wireless portable speaker with powerful sound performance and long battery life.",
+			"price": 79.99,
+			"image": "product_14.jpg",
+			"categoryIds": [
+				2
+			],
+			"quantity": 1
+		},
+		{
+			"id": 15,
+			"name": "Leather Wallet",
+			"description": "A classic leather wallet with multiple card slots and a secure coin pocket.",
+			"price": 49.99,
+			"image": "product_15.jpg",
+			"categoryIds": [
+				3
+			],
+			"quantity": 1
+		},
+		{
+			"id": 16,
+			"name": "Desktop Computer",
+			"description": "A high-performance desktop computer with a fast processor and ample storage space.",
+			"price": 1499.99,
+			"image": "product_16.jpg",
+			"categoryIds": [
+				2
+			],
+			"quantity": 1
+		},
+		{
+			"id": 17,
+			"name": "Perfume",
+			"description": "A luxurious perfume with a captivating fragrance that lasts all day.",
+			"price": 89.99,
+			"image": "product_17.jpg",
+			"categoryIds": [
+				4
+			],
+			"quantity": 1
+		},
+		{
+			"id": 18,
+			"name": "Backpack",
+			"description": "A durable and spacious backpack with padded shoulder straps for comfort.",
+			"price": 59.99,
+			"image": "product_18.jpg",
+			"categoryIds": [
+				3
+			],
+			"quantity": 1
+		},
+		{
+			"id": 19,
+			"name": "Hair Dryer",
+			"description": "A professional-grade hair dryer with multiple heat and speed settings for salon-quality results.",
+			"price": 79.99,
+			"image": "product_19.jpg",
+			"categoryIds": [
+				2
+			],
+			"quantity": 1
+		},
+		{
+			"id": 20,
+			"name": "Luxury Watch",
+			"description": "A timeless and elegant watch for everyday wear or special occasions.",
+			"price": 399.99,
+			"image": "product_20.jpg",
+			"categoryIds": [
+				3
+			],
+			"quantity": 1
+		}
+	],
+	"categories": [
+		{
+			"id": 1,
+			"name": "Clothing"
+		},
+		{
+			"id": 2,
+			"name": "Electronics"
+		},
+		{
+			"id": 3,
+			"name": "Accessories"
+		},
+		{
+			"id": 4,
+			"name": "Beauty"
+		},
+		{
+			"id": 5,
+			"name": "Home & Living"
+		}
+	]
 }

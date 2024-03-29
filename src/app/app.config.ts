@@ -10,12 +10,12 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { firebaseConfig } from '../env';
 
 export const appConfig: ApplicationConfig = {
-  providers: [
-    provideRouter(routes),
-    provideClientHydration(),
-    provideClientHydration(),
-    provideHttpClient(withFetch()),
-    provideAnimations(),
-    importProvidersFrom([AngularFireModule.initializeApp(firebaseConfig), AngularFireAuthModule, AngularFirestoreModule,])
-  ]
+	providers: [
+		provideRouter(routes),
+		provideClientHydration(),
+		provideClientHydration(),
+		provideHttpClient(withFetch()),
+		provideAnimations(),
+		importProvidersFrom([AngularFireModule.initializeApp(firebaseConfig), AngularFireAuthModule, AngularFirestoreModule,])
+	]
 };
