@@ -1,0 +1,60 @@
+<div class="container mx-auto max-w-screen-xl p-6 flex flex-col gap-6 items-end">
+	<a routerLink="/admin/create"
+		class="px-4 py-2 bg-indigo-500 text-white text-sm rounded-lg flex gap-2 w-fit cursor-pointer">
+		<fa-icon [icon]="faAdd"></fa-icon>
+		Create new product
+	</a>
+	<table class="table-auto w-full text-left overflow-hidden shadow rounded-lg">
+		<thead>
+			<tr class="bg-gray-50 border-b border-gray-200">
+				<th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+					Image
+				</th>
+				<th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+					Title
+				</th>
+				<th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+					Description
+				</th>
+				<th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+					Price
+				</th>
+				<th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">
+					Actions
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			@for (product of products; track product.id) {
+			<tr class="bg-white border-b hover:bg-gray-100">
+				<td class="px-6 py-4">
+					<img [src]="product.imageURL" alt="{{ product.title }}"
+						class="w-16 h-16 rounded-lg mr-4 object-cover">
+				</td>
+				<td class="px-6 py-4">
+					{{ product.title }}
+				</td>
+				<td class="px-6 py-4">
+					{{ product.description }}
+				</td>
+				<td class="px-6 py-4">
+					{{ "$" + product.price }}
+				</td>
+				<td class="px-6 py-4 flex gap-2">
+					<a routerLink="/admin/edit/{{ product.id }}"
+						class="flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium text-white bg-yellow-500 rounded hover:bg-yellow-600 focus:outline-none w-1/2">
+						<fa-icon [icon]="faPencilAlt"></fa-icon>
+						Edit
+					</a>
+					<button
+						class="flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium text-white bg-red-600 rounded hover:bg-red-700 focus:outline-none w-1/2"
+						(click)="deleteProduct(product)">
+						<fa-icon [icon]="faTrash"></fa-icon>
+						Delete
+					</button>
+				</td>
+			</tr>
+			}
+		</tbody>
+	</table>
+</div>

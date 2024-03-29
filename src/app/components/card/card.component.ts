@@ -5,18 +5,21 @@ import { Product } from '../../Models/Product/product';
 import { CartService } from '../../services/cart/cart.service';
 
 @Component({
-  selector: 'app-card',
-  standalone: true,
-  imports: [FontAwesomeModule],
-  templateUrl: './card.component.html',
-  styleUrl: './card.component.css'
+	selector: 'app-card',
+	standalone: true,
+	imports: [FontAwesomeModule],
+	templateUrl: './card.component.html',
+	styleUrl: './card.component.css'
 })
 export class CardComponent {
-  @Input() product!: Product;
-  faShoppingCart = faShoppingCart;
-  constructor(private cartServices: CartService) { }
+	@Input() product!: Product;
+	faShoppingCart = faShoppingCart;
 
-  addToCart(product: Product) {
-    this.cartServices.addToCart(product);
-  }
+	constructor(private cartServices: CartService) { }
+
+	addToCart(product: Product) {
+		product.counter++;
+		this.cartServices.addToCart(product);
+		console.log(product.counter);
+	}
 }
