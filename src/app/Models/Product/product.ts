@@ -1,23 +1,21 @@
 export class Product {
 	constructor(
-		public id: number,
-		public name: string,
+		public id: string,
+		public title: string,
 		public price: number,
 		public description: string,
-		public categoryIds: number[],
-		public image: string,
-		public quantity: number
+		public imageURL: string,
+		public counter: number
 	) { }
 
 	static fromJson(json: any): Product {
 		return new Product(
 			json.id,
-			json.name,
+			json.title,
 			json.price,
 			json.description,
-			json.categoryIds,
-			json.image,
-			json.quantity
+			json.imageURL,
+			json.counter
 		);
 	}
 
@@ -26,18 +24,16 @@ export class Product {
 	}
 
 	toString(): string {
-		return `Product(id=<span class="math-inline">\{this\.id\}, name\=</span>{this.name}, price=<span class="math-inline">\{this\.price\}, description\=</span>{this.description}, categoryIds=<span class="math-inline">\{this\.categoryIds\}, image\=</span>{this.image}, quantity=${this.quantity})`;
+		return `Product(id=${this.id}, title=${this.title}, price=${this.price}, description=${this.description}, image=${(this.imageURL)})`;
 	}
 
 	toJson(): any {
 		return {
 			id: this.id,
-			name: this.name,
+			title: this.title,
 			price: this.price,
 			description: this.description,
-			categoryIds: this.categoryIds,
-			image: this.image,
-			quantity: this.quantity
+			imageURL: this.imageURL,
 		};
 	}
 }

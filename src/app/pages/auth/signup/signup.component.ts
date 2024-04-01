@@ -3,9 +3,6 @@ import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../../services/auth/auth.service';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
-// import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
-
 @Component({
 	selector: 'app-signup',
 	standalone: true,
@@ -40,7 +37,7 @@ export class SignupComponent {
 			return;
 		}
 		await this.authServices.register(this.username.value, this.email.value, this.password.value);
-		this.signupForm.reset(); // Reset the form after submitting.
+		this.signupForm.reset();
 		this.username.setValue('');
 		this.email.setValue('');
 		this.password.setValue('');

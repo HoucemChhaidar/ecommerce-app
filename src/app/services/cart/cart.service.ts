@@ -21,12 +21,12 @@ export class CartService {
 					throw new Error('Cart data is not an array');
 				}
 
-				// Check if product already exists in cart
 				const existingItemIndex = parsedCart.findIndex(p => p.id === product.id);
 				if (existingItemIndex !== -1) {
-					parsedCart[existingItemIndex].quantity++; // Update quantity of existing item
+					parsedCart[existingItemIndex].counter++;
 				} else {
-					parsedCart.push(product); // Add new item if not found
+					product.counter = 1;
+					parsedCart.push(product);
 				}
 
 				cart = JSON.stringify(parsedCart);
@@ -58,14 +58,15 @@ export class CartService {
 		this.localStorage?.setItem('cart', JSON.stringify([]));
 	}
 
-	deleteFromCart(product: Product) {
+	deleteFromCart(productId: string) {
 		const cart: string | null | undefined = this.localStorage?.getItem('cart');
 		if (cart) {
 			const parsedCart = JSON.parse(cart);
 			if (!Array.isArray(parsedCart)) {
 				throw new Error('Cart data is not an array');
 			}
-			const index = parsedCart.findIndex(p => p.id === product.id);
+
+			const index = parsedCart.findIndex(p => p.id === productId);
 			if (index !== -1) {
 				parsedCart.splice(index, 1);
 				this.localStorage?.setItem('cart', JSON.stringify(parsedCart));

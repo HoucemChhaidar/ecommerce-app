@@ -31,6 +31,10 @@
 						(click)="toggleDropdown()">
 					<ul #dropdownMenu id="dropdown-menu"
 						class="hidden absolute z-10 right-0 mt-2 py-2 w-48 bg-white border rounded-lg shadow-lg">
+						<li><a type="button" routerLink="/admin"
+								class="block px-4 py-2 text-gray-800 hover:bg-gray-100 w-full text-left">Admin
+								Dashboard</a>
+						</li>
 						<li><button type="button" (click)="logout()"
 								class="block px-4 py-2 text-gray-800 hover:bg-gray-100 w-full text-left">Logout</button>
 						</li>

@@ -31,10 +31,10 @@ export class ProductService {
 			...product,
 		}));
 	}
+
 	public async deleteProduct(product: Product) {
 		(await this.firestore.collection('products').doc(product.id.toString()).delete());
 		console.log('Product deleted');
 		return true;
 	}
 }
-

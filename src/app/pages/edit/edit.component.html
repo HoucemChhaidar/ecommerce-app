@@ -1,0 +1,42 @@
+<div class="container mx-auto max-w-screen-xl p-6 flex flex-col gap-6 items-end">
+	<form class="w-full max-w-md mx-auto" (submit)="onSubmit()">
+		<div class="flex flex-col gap-4">
+			<div class="flex items-center">
+				<label for="title" class="w-1/4 text-sm font-medium">Product Title:</label>
+				<input type="text" id="title" name="title"
+					class="w-3/4 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-indigo-500 focus:ring-1"
+					[(ngModel)]="product.title" required>
+			</div>
+
+			<div class="flex items-center">
+				<label for="description" class="w-1/4 text-sm font-medium">Description:</label>
+				<textarea id="description" name="description"
+					class="w-3/4 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-indigo-500 focus:ring-1"
+					[(ngModel)]="product.description" required></textarea>
+			</div>
+
+			<div class="flex items-center">
+				<label for="price" class="w-1/4 text-sm font-medium">Price:</label>
+				<input type="number" id="price" name="price"
+					class="w-3/4 px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-indigo-500 focus:ring-1"
+					[(ngModel)]="product.price" required min="0">
+			</div>
+
+			<div class="flex items-center">
+				<label for="image" class="w-1/4 text-sm font-medium">Image:</label>
+				@if (product.imageURL) {
+				<span>{{ product.imageURL }}</span>
+				}
+
+				@else {
+				<span>No image available</span>
+				}
+			</div>
+
+			<button type="submit"
+				class="bg-indigo-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700">Update Product
+			</button>
+		</div>
+	</form>
+
+</div>

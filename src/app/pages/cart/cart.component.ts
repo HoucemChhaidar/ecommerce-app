@@ -24,33 +24,33 @@ export class CartComponent implements OnInit {
 	constructor(private cartService: CartService) { }
 
 	ngOnInit() {
-		this.cartItems = this.cartService.getCart(); // Call getCart on init
+		this.cartItems = this.cartService.getCart();
 	}
 
-	removeFromCart(productId: number) {
-		this.cartService.deleteFromCart(new Product(productId, '', 0, '', [], '', 0)); // Pass a minimal Product instance for deletion
-		this.cartItems = this.cartService.getCart(); // Refresh the cart items
+	removeFromCart(productId: string) {
+		this.cartService.deleteFromCart(productId);
+		this.cartItems = this.cartService.getCart();
 	}
 
-	decrementQuantity(productId: number) {
+	decrementQuantity(productId: string) {
 		const cartItem = this.cartItems.find(item => item.id === productId);
-		if (cartItem && cartItem.quantity > 1) {
-			cartItem.quantity--;
-			this.cartService.updateCart(cartItem); // Update cart with adjusted quantity
+		if (cartItem && cartItem.counter > 1) {
+			cartItem.counter--;
+			this.cartService.updateCart(cartItem);
 		}
 	}
 
-	incrementQuantity(productId: number) {
+	incrementQuantity(productId: string) {
 		const cartItem = this.cartItems.find(item => item.id === productId);
 		if (cartItem) {
-			cartItem.quantity++;
-			this.cartService.updateCart(cartItem); // Update cart with adjusted quantity
+			cartItem.counter++;
+			this.cartService.updateCart(cartItem);
 		}
 	}
 
 	calculateTotalPrice(): string {
 		let totalPrice = 0;
-		this.cartItems.forEach(item => totalPrice += item.price * item.quantity);
+		this.cartItems.forEach(item => totalPrice += item.price * item.counter);
 		return totalPrice.toFixed(2);
 	}
 

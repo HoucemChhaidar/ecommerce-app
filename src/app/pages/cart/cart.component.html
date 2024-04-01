@@ -10,10 +10,9 @@
 		<ng-container *ngFor="let item of cartItems">
 			<li class="flex items-center justify-between py-4 border-b border-gray-200">
 				<div class="flex items-center">
-					<img [src]="'../../../assets/images/products/' + item.image" alt="{{ item.name }}"
-						class="w-16 h-16 rounded-lg mr-4 object-cover" />
+					<img [src]="item.imageURL" alt="{{ item.title }}" class="w-16 h-16 rounded-lg mr-4 object-cover" />
 					<div class="text-left">
-						<h3 class="text-lg font-bold text-gray-900">{{ item.name }}</h3>
+						<h3 class="text-lg font-bold text-gray-900">{{ item.title }}</h3>
 						<span class="text-gray-700">$<span>{{ item.price }}</span></span>
 					</div>
 				</div>
@@ -22,7 +21,7 @@
 						class="h-full w-8 text-xs font-bold rounded-lg bg-gray-200 hover:bg-gray-300 focus:outline-none">
 						<fa-icon [icon]="faMinus"></fa-icon>
 					</button>
-					<input [(ngModel)]="item.quantity" type="text" min="1" value="1"
+					<input [(ngModel)]="item.counter" type="text" min="1" value="1"
 						class="h-full w-12 px-0 text-center border border-gray-300 rounded-lg focus:outline-none" />
 					<button (click)="incrementQuantity(item.id)"
 						class="h-full w-8  text-xs font-bold rounded-lg bg-gray-200 hover:bg-gray-300 focus:outline-none">
